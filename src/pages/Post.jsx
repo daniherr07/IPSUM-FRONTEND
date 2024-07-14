@@ -27,7 +27,7 @@ function Post() {
       "Content-Type": "application/json",
     };
     axios
-      .post("http://localhost:4000", formData, { headers })
+      .post("https://ipsum-backend.onrender.com/", formData, { headers })
       .then((response) => {
         console.log("Form submitted successfully:", response.data);
         confetti();
