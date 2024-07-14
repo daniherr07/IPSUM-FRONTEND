@@ -9,7 +9,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:4000");
+    const eventSource = new EventSource("https://ipsum-backend.onrender.com/");
 
     eventSource.onmessage = (event) => {
       const eventData = event.data;
