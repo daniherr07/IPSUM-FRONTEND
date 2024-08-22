@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:wght@300;400;500;600;700&family=Inter:wght@100..900&display=swap');
+
+.container{
+    font-family: "Archivo", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(#ECFEFF, #7BDFD8);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    position: relative;
+}
+
+.image{
+    
+    width: 80vw !important;
+    height: auto !important;   
+    margin-top: 4em;
+    margin-bottom: 3.5em;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+    
+    & *{
+        width: 80%;
+        
+    }
+
+    & .icon{
+        position: absolute;
+        width: 20px;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+    }
+
+    & .usernameContainer, .passwordContainer{
+        position: relative;
+        
+    }
+
+    & .userName, .userPassword{
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        height: 37px;
+        padding-left: 20px;
+    }
+
+    & .userName::placeholder, .userPassword::placeholder{
+        font-size: 1.2rem;
+    }
+
+    & .loginButton{
+        height: 60px;
+        border: none;
+        background-color: #0B2759;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.4rem;
+        margin-bottom: 1.5em;
+    }
+}
+
+.register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    gap: 12px;
+
+    & .registerButton{
+        all: unset;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        width: 80%;
+        height: 60px;
+        border: none;
+        background-color: #0B2759;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.4rem;
+    }
+}
